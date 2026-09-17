@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boomito responsive preview</title>
+  <style>
+    :root{color-scheme:dark;font-family:ui-rounded,"SF Pro Rounded",system-ui,sans-serif;background:#07101d;color:#ffe6c5}
+    *{box-sizing:border-box}body{margin:0;padding:32px}header{max-width:1400px;margin:0 auto 28px}h1{margin:0 0 8px;font-size:clamp(28px,5vw,48px)}p{margin:0;color:#bbb8b3}.board{max-width:1400px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:24px}.preview{border:1px solid #31425a;border-radius:20px;background:#101c2d;overflow:hidden;box-shadow:0 20px 50px #0006}.preview h2{font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin:0;padding:14px 18px;border-bottom:1px solid #31425a}.viewport{width:100%;overflow:hidden;background:#0b1524}.viewport iframe{display:block;border:0;background:#0b1524}.phone .viewport{height:760px}.phone iframe{width:390px;height:844px;zoom:.9}.tablet .viewport{height:760px}.tablet iframe{width:820px;height:1180px;zoom:.75}.desktop{grid-column:1/-1}.desktop .viewport{height:780px}.desktop iframe{width:1440px;height:900px;zoom:.92}@media(max-width:900px){body{padding:18px}.board{grid-template-columns:1fr}.desktop{grid-column:auto}.phone iframe{zoom:.86}.tablet iframe{zoom:.7}.desktop iframe{zoom:.55}.desktop .viewport{height:520px}}@media(max-width:480px){.tablet iframe{zoom:.62}.desktop iframe{zoom:.35}.desktop .viewport{height:330px}}
+  </style>
+</head>
+<body>
+  <header><h1>Boomito responsive preview</h1><p>Landing page at representative phone, tablet and desktop viewports.</p></header>
+  <main class="board">
+    <section class="preview phone"><h2>Phone · 390 × 844</h2><div class="viewport"><iframe src="index.html" title="Boomito phone preview"></iframe></div></section>
+    <section class="preview tablet"><h2>Tablet · 820 × 1180</h2><div class="viewport"><iframe src="index.html" title="Boomito tablet preview"></iframe></div></section>
+    <section class="preview desktop"><h2>Desktop · 1440 × 900</h2><div class="viewport"><iframe src="index.html" title="Boomito desktop preview"></iframe></div></section>
+  </main>
+</body>
+</html>
